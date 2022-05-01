@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">lab2</string>
+    <string name="app_name">Laboratorinis2</string>
+    <string name="Words">Words</string>
+    <string name="Chars">Chars</string>
+    <string-array name="counting_options">
+        <item>Words</item>
+        <item>Chars</item>
+    </string-array>
 </resources>
