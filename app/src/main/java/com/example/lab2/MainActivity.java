@@ -36,23 +36,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onBtnCalculateClick(View view) {
-        if (txMain.getText().toString().isEmpty() ) {
-            Toast.makeText(this, "Text is empty", Toast.LENGTH_LONG).show();}
-
-        else {
-
-            if (this.spOptionSelection.getSelectedItem().toString().equalsIgnoreCase(getResources().getStringArray(R.array.Choice)[0])){
+        if (txMain.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Text is empty", Toast.LENGTH_LONG).show();
+        } else if
+                (this.spOptionSelection.getSelectedItem().toString().equalsIgnoreCase(getResources().getStringArray(R.array.Choice)[0])) {
                 int wordsCount = TextUtilsWords.getWordsCount(this.txMain.getText().toString());
                 String wordsCountFormatted = String.valueOf(wordsCount);
                 this.tvMain.setText(wordsCountFormatted);
 
-            } else {
+        } else if (this.spOptionSelection.getSelectedItem().toString().equalsIgnoreCase(getResources().getStringArray(R.array.Choice)[1])) {
                 int charsCount = TextUtilsChars.getCharsCount(this.txMain.getText().toString());
                 String charsCountFormatted = String.valueOf(charsCount);
                 this.tvMain.setText(charsCountFormatted);
-            }
+        } else if (this.spOptionSelection.getSelectedItem().toString().equalsIgnoreCase(getResources().getStringArray(R.array.Choice)[2])) {
+            CharSequence Count = TextUtilsUp.getTextUp(this.txMain.getText().toString());
+            String CountFormatted = String.valueOf(Count);
+            this.tvMain.setText(CountFormatted);}
 
+        else{
+            CharSequence Count = TextUtilsLow.getTextLow(this.txMain.getText().toString());
+            String CountFormatted = String.valueOf(Count);
+            this.tvMain.setText(CountFormatted);
         }
-
     }
 }

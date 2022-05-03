@@ -3,5 +3,7 @@
     <string-array name="Choice">
         <item>Words</item>
         <item>Chars</item>
+        <item>Up</item>
+        <item>Low</item>
     </string-array>
 </resources>

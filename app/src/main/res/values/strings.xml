@@ -2,8 +2,12 @@
     <string name="app_name">Laboratorinis2</string>
     <string name="Words">Words</string>
     <string name="Chars">Chars</string>
+    <string name="Up">Up</string>
+    <string name="Low">Up</string>
     <string-array name="counting_options">
         <item>Words</item>
         <item>Chars</item>
+        <item>Up</item>
+        <item>Low</item>
     </string-array>
 </resources>
